@@ -2,7 +2,7 @@
 A simple Snake Game implemented in C++. The game is played in a terminal window and uses basic keyboard inputs to control the snake. The goal is to eat the food (`F`) that appears on the screen while avoiding collisions with the walls or the snake's own body.
 
 ## Table Of Content
-- Features
+- [Features](#Features) 
 - How to Play
 - Compilation and Execution
 
