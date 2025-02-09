@@ -39,7 +39,7 @@ A simple Snake Game implemented in C++. The game is played in a terminal window 
 https://github.com/KAVY-OP/SNAKE_GAME
 ~~~
 
-- Open terminal and go to the folder where snake_game.cpp file iss stored.
+- Open terminal and go to the folder where snake_game.cpp file is stored.
 - Use this command to compile and run the code.
 
 ~~~bash
