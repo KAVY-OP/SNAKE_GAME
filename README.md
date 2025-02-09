@@ -34,11 +34,10 @@ A simple Snake Game implemented in C++. The game is played in a terminal window 
 
 ### Steps
 
-- Download code from github link
+- Download code file from github link.
 ~~~bash
 https://github.com/KAVY-OP/SNAKE_GAME
 ~~~
-
 
 - Open terminal and go to the source code.
 - Use this command to compile and run the code.
