@@ -36,7 +36,7 @@ A simple Snake Game implemented in C++. The game is played in a terminal window 
 
 - Download code from github link
 ~~~bash
-LINK
+https://github.com/KAVY-OP/SNAKE_GAME
 ~~~
 
 
