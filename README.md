@@ -3,8 +3,8 @@ A simple Snake Game implemented in C++. The game is played in a terminal window 
 
 ## Table Of Content
 - [Features](#Features) 
-- How to Play
-- Compilation and Execution
+- [How to Play](#How-to-Play)
+- [Compilation and Execution](#Compilation-and-Execution)
 
 ## Features
 
