@@ -6,21 +6,21 @@
 #include <ctime>         // For time() function
 using namespace std;
 
-// Constants for the game board dimensions
+// Constants for the game board dimensions.
 const int WIDTH = 20;
 const int HEIGHT = 20;
 
-// SnakeGame class definition
+// SnakeGame class
 class SnakeGame {
 private:
-    bool gameOver;       // Flag to check if the game is over
-    int score;           // Player's score
-    pair<int, int> food; // Position of the food on the board
-    vector<pair<int, int>> snake; // Vector to store the snake's body segments
-    enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN }; // Enum for snake's direction
-    eDirection dir;      // Current direction of the snake
+    bool gameOver;       // Flag to check if the game is over or not.
+    int score;           // Player's score.
+    pair<int, int> food; // Position of the food on the board.
+    vector<pair<int, int>> snake; // Vector to store the snake's body segments.
+    enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN }; // Enum for snake's direction. IMPORTANT
+    eDirection dir;      // Current direction of the snake. IMPORTANT
 
-    // Function to place food at a random position on the board
+    // Placing food at a random position on the board.
     void PlaceFood() {
         bool validPosition;
         do {
@@ -37,7 +37,7 @@ private:
         } while (!validPosition); // Repeat until a valid position is found
     }
 
-    // Function to draw the game board and snake
+    // Drawing the game board and the snake.
     void Draw() {
         system("cls"); // Clear the console screen
         // Draw the top border of the board
@@ -54,7 +54,7 @@ private:
                 else if (x == food.first && y == food.second) cout << "F";
                 else {
                     bool isBody = false;
-                    // Draw the snake's body
+                    // Draw the snake's body.
                     for (size_t i = 1; i < snake.size(); i++) {
                         if (snake[i].first == x && snake[i].second == y) {
                             cout << "o";
@@ -62,23 +62,23 @@ private:
                             break;
                         }
                     }
-                    if (!isBody) cout << " "; // Draw empty space
+                    if (!isBody) cout << " "; // Draw empty space.
                 }
-                if (x == WIDTH - 1) cout << "#"; // Draw the right border
+                if (x == WIDTH - 1) cout << "#"; // Draw the right border.
             }
             cout << endl;
         }
 
-        // Draw the bottom border of the board
+        // Draw the bottom border of the board.
         for (int i = 0; i < WIDTH + 2; i++) cout << "#";
         cout << endl;
-        // Display the score and instructions
+        // Score and instructions.
         cout << "Score: " << score << endl << endl;
         cout << "SNAKE GAME" << endl;
         cout << "Use W, A, S, D to move. Press X to exit." << endl;
     }
 
-    // Function to handle user input
+    // Function to handle user input.
     void Input() {
         if (_kbhit()) { // Check if a key is pressed
             switch (_getch()) { // Get the pressed key
@@ -91,7 +91,7 @@ private:
         }
     }
 
-    // Function to update the game logic
+    // Function to update the game logic.
     void Logic() {
         if (dir == STOP) return; // If no direction, do nothing
 
